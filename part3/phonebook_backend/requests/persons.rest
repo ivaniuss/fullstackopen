@@ -1,0 +1,14 @@
+GET http://localhost:3000/api/persons
+
+###
+GET http://localhost:3000/api/persons/65e7a751bbd2929170573a7f
+
+###
+POST http://localhost:3000/api/persons Content-Type: application/json
+
+{
+"content": "rest client is a handy tool", "important": false
+}
+
+###
+DELETE http://localhost:3000/api/persons/65e7a5f170ba43b965f2c375
