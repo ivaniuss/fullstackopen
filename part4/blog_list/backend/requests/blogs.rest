@@ -2,6 +2,6 @@ GET http://localhost:3000/api/blogs
 
 ###
 POST http://localhost:3000/api/blogs 
-Content-Type: application/json
 
-{ "title": "restful", "author": "ivaniuss" }
+
+{ "title": "restful2", "author": "ivan2" }
