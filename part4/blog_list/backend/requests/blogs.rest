@@ -1,7 +1,36 @@
-GET http://localhost:3000/api/blogs
+get http://localhost:3000/api/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Iml2YW5pdXNzIiwiaWQiOiI2NWY3YmE5YzVmMjUyNTc4YWQwMGI5NjIiLCJpYXQiOjE3MTA3NDA2NTgsImV4cCI6MTcxMDc0MDY2OH0.mnZbq0pmrm6ZLbBMOs3byboSRucbzxd6BwzeILFJFjQ
+###
+get http://localhost:3000/api/blogs/65f7cf984da221abcb39b066
+Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Iml2YW5pdXNzIiwiaWQiOiI2NWY3YmE5YzVmMjUyNTc4YWQwMGI5NjIiLCJpYXQiOjE3MTA3MzUxNzF9.6Pf6QFNs2Kh_fnMu0u1HuRXbxwSSGKO7GGaWtH_bOtA
 
 ###
-POST http://localhost:3000/api/blogs 
+post http://localhost:3000/api/blogs 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Iml2YW5pdXNzIiwiaWQiOiI2NWY3YmE5YzVmMjUyNTc4YWQwMGI5NjIiLCJpYXQiOjE3MTA3MzUxNzF9.6Pf6QFNs2Kh_fnMu0u1HuRXbxwSSGKO7GGaWtH_bOtA
+
+{ "title": "restful4", "author": "ivan4", "url": "ivan4.com" }
 
 
-{ "title": "restful2", "author": "ivan2" }
+###
+delete http://localhost:3000/api/blogs/65f7ca7dabc7f6bbea9f6439
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Iml2YW5pdXNzIiwiaWQiOiI2NWY3YmE5YzVmMjUyNTc4YWQwMGI5NjIiLCJpYXQiOjE3MTA3MzUxNzF9.6Pf6QFNs2Kh_fnMu0u1HuRXbxwSSGKO7GGaWtH_bOtA
+
+{ "title": "restful3", "author": "ivan3", "url": "ivan.com" }
+
+###
+post http://localhost:3000/api/users
+Content-Type: application/json
+
+{ "username": "ivaniuss", "name": "ivan", "password": "ivaniuss123"}
+
+###
+get http://localhost:3000/api/users
+
+###
+post http://localhost:3000/api/login
+Content-Type: application/json
+
+{ "username": "ivaniuss", "password": "ivaniuss123"}
