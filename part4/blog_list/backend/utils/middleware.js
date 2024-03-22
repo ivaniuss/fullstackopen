@@ -9,14 +9,13 @@ const userExtractor = async (request, response, next) => {
   if (!authorization) {
     return response.status(401).json({ error: 'token missing' });
   }
-
+  
   if (!authorization.startsWith('Bearer ')) {
     return response.status(401).json({ error: 'token invalid' });
   }
-
+  
   const token = authorization.substring(7);
   const decodedToken = jwt.verify(token, config.SECRET);
-  console.log('decoded', decodedToken)
   if (!decodedToken.id) {
     return response.status(401).json({ error: 'token invalid' })
   }
